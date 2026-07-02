@@ -178,7 +178,7 @@ form.addEventListener('submit', async function(e) {
     showErrorModal();
   } finally {
     submitBtn.disabled = false;
-    submitBtn.textContent = 'SEND ME THE VIDEO NOW';
+    submitBtn.textContent = 'Query Submitted';
   }
 });
 
