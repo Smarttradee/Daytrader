@@ -1,114 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEO Meta -->
-  <meta name="description" content="Learn how to make consistent trading decisions through rules, risk management, and execution discipline. For professionals who have lost money in trading." />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Trading Discipline Masterclass" />
-  <meta property="og:description" content="Rule-based trading without Telegram tips or emotional decisions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="IFX.webp" />
-  <title>Trading Discipline | Rule-Based Masterclass</title>
-  <!-- Google Font (optional clean font) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css.css">
- </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background:#ffffff;
+        font-family:Arial, sans-serif;
+        flex-direction:column;
+    }
+
+    .loader{
+        width:60px;
+        height:60px;
+        border:6px solid #e5e5e5;
+        border-top:6px solid #007BFF;
+        border-radius:50%;
+        animation:spin .8s linear infinite;
+    }
+
+    p{
+        margin-top:20px;
+        color:#555;
+        font-size:18px;
+    }
+
+    @keyframes spin{
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+</style>
+
+</head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <p class="top-title">For Corporate Professionals Who Have Lost Money In Trading</p>
-      <h2 align="center">Learn How To Make Consistent Trading Decisions Through Rules, Risk Management And Execution Discipline</h2>
-      <h3>Without Depending On Random Tips, Multiple Strategies Or Emotional Trading</h3>
 
-      <div class="hero-row">
-        <div class="left">
-          <img src="Ifxx.png" alt="Trading discipline illustration" loading="lazy" />
-        </div>
-        <div class="right">
-          <form id="leadForm" novalidate>
-            <input type="text" id="fullName" placeholder="Full Name" required aria-required="true" />
-            <input type="email" id="email" placeholder="Email" required aria-required="true" />
-            <input type="tel" id="phone" placeholder="Phone Number" required aria-required="true" maxlength="10" />
-            <select id="profession" required aria-required="true">
-              <option value="">Current Profession</option>
-              <option value="Student">Student</option>
-              <option value="Job">Job</option>
-              <option value="Business">Business</option>
-              <option value="Other">Other</option>
-            </select>
-            <button type="submit" id="submitBtn">SUMBIT</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="loader"></div>
+<p>Loading...</p>
 
-  <!-- Learn Section -->
-  <section class="learn">
-    <div class="container">
-      <h2>In this short and to the point video, you're going to learn:</h2>
-      <ul>
-        <li>Why most professionals lose money despite learning strategies</li>
-        <li>The mistakes causing emotional trading and repeated losses</li>
-        <li>How to become a rule-based trader in just 90 days</li>
-      </ul>
-      <div class="center">
-        <a href="#leadForm" class="access" id="accessLink">Get Access</a>
-      </div>
-    </div>
-  </section>
+<script>
+window.onload = function () {
+    setTimeout(function () {
+        window.location.replace("https://chat.whatsapp.com/F5sjeL275lOCqGIUwxducP");
+    }, 500); // 0.5 Second
+};
+</script>
 
-  <footer>
-    <p>&copy; 2026 Trading Discipline</p>
-  </footer>
-
-  <!-- Success Modal -->
-  <div id="successModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-card">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
-      <div class="modal-icon">&#10004;</div>
-      <h2 id="modalTitle">Your Query Has Been Submitted Successfully</h2>
-      <p class="modal-desc">Thank you for submitting your details.</p>
-         <a href="https://t.me/+urAxzm-AWzliZmI1" target="_blank" class="telegram-btn">
-    📲 Join Telegram
-</a>
-      <!-- Video container -->
-      <!-- <div class="video-wrapper"> -->
-     
-        <!-- Embedded YouTube video (responsive) – replace src with your video -->
-        <!-- <iframe src="fx.mp4" title="Masterclass Video" frameborder="0" allowfullscreen loading="lazy"></iframe> -->
-        <!-- Alternatively, uncomment below for HTML5 video player -->
-        <!-- <video controls playsinline>
-          <source src="your-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> -->
-      <!-- </div> -->
-      <!-- <div class="modal-actions">
-        <a href="#" class="btn-watch" id="watchVideoBtn" target="_blank">Watch Video</a>
-        <button class="btn-close-modal" id="modalCloseBtn">Close</button>
-      </div> -->
-    <!-- </div> -->
-  </div>
-
-  <!-- Error Modal (simple attractive) -->
-  <div id="errorModal" class="modal-overlay" role="alert" aria-modal="true">
-    <div class="modal-card error-card">
-      <button class="modal-close" id="errorModalClose" aria-label="Close error">&times;</button>
-      <div class="modal-icon error-icon">&#9888;</div>
-      <h2>Oops! Something went wrong.</h2>
-      <p class="modal-desc">We couldn't submit your details. Please try again later.</p>
-      <button class="btn-close-modal" id="errorModalBtn">Close</button>
-    </div>
-  </div>
-
-  <!-- JavaScript (ES6) -->
-  <script src="script.js"></script>
-  
 </body>
 </html>
